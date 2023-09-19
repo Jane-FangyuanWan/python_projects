@@ -1,1 +1,5 @@
-print("Fangyuan Wan\n8/31/1996\nYoga\nHeadfirstpython\nWitness for the Prosecution")
+print("Name: Fangyuan Wan")
+print("Birthday: 8/21/1996")
+print("Hobbies: Watch thriller")
+print("Favorite Book: Head First Java")
+print("Favorite Movie: Witness for the Prosecution")
