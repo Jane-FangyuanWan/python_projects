@@ -8,7 +8,7 @@ def draw_asterisk_tree(height):
     print(" " * (height - 6) + "***********")
     print(" " * (height - 7) + "*************")
     print(" " * (height - 8) + "***************")
-    
+
     # Draw the trunk
     print(" " * (height - 1) + "|")
 
