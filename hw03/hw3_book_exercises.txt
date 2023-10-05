@@ -1,0 +1,53 @@
+4.14 Exercise
+
+1. True or False
+
+2. George Boole
+
+3. 1
+
+4. 0
+
+5. True
+
+6. 
+a. True 
+b. True
+c. False 
+d. True
+e. False
+f. True
+g. True
+h. False
+i. False
+j. True
+k. True
+l. False
+
+7. 
+a. True
+b. False
+c. False
+d. True
+e. False
+f. True
+g. False
+h. True
+i. True
+j. True
+k. False
+l. True
+m. False
+n. True
+o. True
+p. True
+q. False
+r. True
+s. False
+t. True
+u. True
+v. False
+w. False
+x. True
+y. True
+z. False
