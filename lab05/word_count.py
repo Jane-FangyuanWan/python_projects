@@ -1,6 +1,7 @@
 import re
 import sys
 
+
 def main():
     '''
     Count words, non-whitespace characters (including punctuation),

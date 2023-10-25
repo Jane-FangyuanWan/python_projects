@@ -16,6 +16,7 @@ def main():
     except ValueError:
         print("Please enter a vaild integer.")
 
+
 def cal_triangular(n):
     '''
     Calculate the "triangular number"

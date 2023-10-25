@@ -32,7 +32,7 @@ def add_last_name_with_asterisks(last_name: str) -> str:
 
 def generate_username(first_name: str, last_name: str) -> str:
     '''
-    Generate a username 
+    Generate a username
     '''
     random_number: str = generate_random_num()
     username: str = first_name[0] + last_name[0:6] + random_number
