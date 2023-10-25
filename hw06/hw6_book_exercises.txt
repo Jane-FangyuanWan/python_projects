@@ -1,0 +1,12 @@
+1. No, it contains two functions with the same name "proc" defined in the same scope
+The later one will overwrite the previous one
+2. Yes
+3. No, the proc function does not explicitly return any value; it prints the result instead.
+Should modify the proc function to return a value instead of printing it
+4. Yes
+5. No, it calls the proc function with only one argument (5). However, the proc function is defined to accept two arguments (x and y).
+6. No, it calls the proc function with two arguments (5 and 4), but the proc function is defined to accept only one argument (x).
+7. Yes
+8. It prints 10. The reason for this behavior is that the proc function modifies a local variable x, but it does not modify the num variable in the main function. 
+9. Yes, the provided Python program is legal. The variable x is used in two different places: as a parameter in the proc function and as a local variable in the main function. 
+10. Yes, the provided Python program is legal. In Python, the names of the actual parameters and formal parameters do not need to match. The function proc can accept the value of y as an argument and perform calculations on it using the name x within the function.
