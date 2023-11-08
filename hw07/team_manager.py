@@ -43,7 +43,8 @@ def do_set_team_name(team):
     and spaces -- extra credit
     """
     name = input("What do you want to name the team?\n")
-    while not name.replace(" ", "").isalnum():
+    while not name.replace(" ", "").isalnum() or not \
+            name.replace(" ", "").isalpha():
         print("Please note team name should only contain alphanumeric"
               + " characters and spaces.")
         name = input("What do you want to name the team?\n")
@@ -64,8 +65,7 @@ def do_check_position_filled(team):
 
 def do_add_player_to_team(team):
     """
-    Ensure that the player's attributes is an actual
-    numerical value - extra credit
+    Ensure that the player's different attributes - extra credit
     """
     player_name = input("What's the player's name?\n")
     while not player_name.isalpha() or not \
