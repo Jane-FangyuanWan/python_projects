@@ -1,5 +1,5 @@
-#Fangyuan Wan
-#A dodgeball team management system
+# Fangyuan Wan
+# A dodgeball team management system
 
 class Player:
     """

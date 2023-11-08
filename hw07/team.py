@@ -1,5 +1,5 @@
-#Fangyuan Wan
-#A dodgeball team management system
+# Fangyuan Wan
+# A dodgeball team management system
 
 from player import Player
 
@@ -12,15 +12,12 @@ class Team:
         self.name = "Anonymous Team"
         self.players = []
 
-
     def set_team_name(self, name):
         self.name = name
-
 
     def add_player(self, player_name, player_number, player_position):
         player = Player(player_name, player_number, player_position)
         self.players.append(player)
-
 
     def cut_player(self, player_name):
         for player in self.players:
@@ -30,20 +27,17 @@ class Team:
         print(f"{player_name} isn't on the team")
         return False
 
-
     def is_position_filled(self, position):
         for player in self.players:
             if player.position == position:
                 return True
         return False
 
-
     def is_player_on_team(self, player_name):
         for player in self.players:
             if player.name == player_name:
                 return True
         return False
-
 
     def display_roster(self):
         print(f"The lineup for {self.name} is:")

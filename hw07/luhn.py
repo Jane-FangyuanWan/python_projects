@@ -23,6 +23,7 @@ def modify_digits(nums):
     else:
         print(f"{nums} is not vaild")
 
+
 def main():
     """
     Asks for an account number and calls the function
@@ -30,5 +31,6 @@ def main():
     nums = input("Enter an account number: ")
 
     modify_digits(nums)
+
 
 main()

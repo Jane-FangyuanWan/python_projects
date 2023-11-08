@@ -1,5 +1,5 @@
-#Fangyuan Wan
-#A dodgeball team management system
+# Fangyuan Wan
+# A dodgeball team management system
 
 
 from team import Team
@@ -16,7 +16,7 @@ def main():
 
         if command == "done":
             print("Shutting down team manager\n")
-            return 
+            return
         elif command == "set team name":
             do_set_team_name(the_team)
         elif command == "show roster":
@@ -39,11 +39,13 @@ def main():
 
 def do_set_team_name(team):
     """
-    Ensure team's name is made up of alphanumeric characters and spaces -- extra credit
+    Ensure team's name is made up of alphanumeric characters
+    and spaces -- extra credit
     """
     name = input("What do you want to name the team?\n")
     while not name.replace(" ", "").isalnum():
-        print("Please note team name should only contain alphanumeric characters and spaces.")
+        print("Please note team name should only contain alphanumeric"
+              + " characters and spaces.")
         name = input("What do you want to name the team?\n")
     team.set_team_name(name)
 
@@ -62,11 +64,14 @@ def do_check_position_filled(team):
 
 def do_add_player_to_team(team):
     """
-    Ensure that the player's attributes is an actual numerical value - extra credit
+    Ensure that the player's attributes is an actual
+    numerical value - extra credit
     """
     player_name = input("What's the player's name?\n")
-    while not player_name.isalpha() or not player_name.replace(" ", "").isalpha():
-        print("Invalid name. Please enter a valid name with alphabetic characters and spaces only.")
+    while not player_name.isalpha() or not \
+            player_name.replace(" ", "").isalpha():
+        print("Invalid name. Please enter a valid name with alphabetic"
+              + " characters and spaces only.")
         player_name = input("What's the player's name?\n")
     player_number = input("What's " + player_name + "'s number?\n")
     while not player_number.isnumeric():
@@ -75,7 +80,8 @@ def do_add_player_to_team(team):
     valid_positions = ["catcher", "corner", "sniper", "thrower"]
     player_position = input("What's " + player_name + "'s position?\n")
     while player_position not in valid_positions:
-        print("Invalid position. Please enter a valid position (catcher, corner, sniper, or thrower).")
+        print("Invalid position. Please enter a valid position"
+              + " (catcher, corner, sniper, or thrower).")
         player_position = input("What's " + player_name + "'s position?\n")
     team.add_player(player_name, player_number, player_position)
     print("Added", player_name, "to", team.name)
@@ -108,8 +114,10 @@ def do_cut_player_from_team(team, bench):
 def do_show_bench(bench):
     bench.display_bench()
 
+
 def do_not_understand():
     print("I didn't understand that command")
+
 
 if __name__ == "__main__":
     main()
